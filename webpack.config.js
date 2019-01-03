@@ -3,7 +3,7 @@ const webpack = require("webpack");
 module.exports = {
   entry: './app/web/index.js',
   output: {
-    path: __dirname + '/app/web/public',
+    path: __dirname + '/web/public',
     publicPath: '/',
     filename: 'bundle.js'
   },
@@ -28,7 +28,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ],
   devServer: {
-    contentBase: './app/web/public',
+    contentBase: './web/public',
     hot: true
   }
 };
